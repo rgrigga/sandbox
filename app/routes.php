@@ -26,6 +26,10 @@ Route::get('notes',function(){
     ->with(compact('pagetitle'));
 });
 
+Route::get('angular', function()
+{
+	return View::make('angular');
+});
 
 Route::get('/', function()
 {
