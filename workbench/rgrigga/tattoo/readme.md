@@ -30,7 +30,8 @@ From the CLI, run this command:
 ***Recommended:***
 * bower
 * grunt
-Just as composer solves dependency management issues for php, so do Bower and Grunt for javascript and assets (and perhaps more).  You can use bower to install things like bootstrap or angular.  Installing bower would require you to have node.js installed locally.  I was originally opposed to this idea, but have come to understand it's usefulness.  You dont NEED it, but if you're not using it, you are likely reinventing the wheel in ways you don't need to. 
+
+Just as composer solves dependency management issues for php, so do Bower and Grunt for javascript and assets (and perhaps more).  You can use bower to install things like bootstrap or angular.  Installing bower would require you to have node.js installed locally.  I was originally opposed to this idea, but have recently come to understand it's usefulness.  You dont NEED it, but if you're not using it, you are likely reinventing the wheel in ways you don't need to. 
 
 http://bower.io/#installing-bower
 
@@ -39,5 +40,10 @@ http://bower.io/#installing-bower
     bower install bootstrap
     bower install angular
 
+Still working from scratch, 
+You could pause now and run 'git init' for long-term backup and future collaboration.  Or, you can do this later if you like.
 
+    git init
+    git remote add origin https://github.com/rgrigga/sandbox.git
+    git push -u origin master
 
