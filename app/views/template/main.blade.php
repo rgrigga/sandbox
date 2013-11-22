@@ -7,7 +7,7 @@
         <title>Lar.dev</title>
 		<link rel="stylesheet/less" href="{{asset('/assets/less/pense.less')}}">
 		<script src="//code.jquery.com/jquery.js"></script>
-		<script src="/assets/js/less-1.4.1.min.js"></script>
+		<script src="/assets/js/less-1.5.0.min.js"></script>
 		<script type="text/javascript">
 		     less.env = "development";
 		     less.watch();

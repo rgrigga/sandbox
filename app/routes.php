@@ -16,6 +16,12 @@ Route::get('bam', function()
 	return View::make('bam');
 });
 
+Route::get('index',function(){
+	$pagetitle="Index";
+	return View::make('index')
+	->with(compact('pagetitle'));
+});
+
 Route::get('notes/{$page}',function($page){
     return View::make('Rgrigga::route($page)');
 });
@@ -30,6 +36,14 @@ Route::get('angular', function()
 {
 	return View::make('angular');
 });
+
+
+
+Route::resource('fields', 'FieldsController');
+
+Route::resource('comments', 'CommentsController');
+
+Route::resource('photos', 'PhotosController');
 
 Route::get('/', function()
 {
