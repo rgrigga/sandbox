@@ -58,6 +58,15 @@
             margin: auto;
             text-align: center;
         }
+        .left{
+            float: left;
+            text-align: left;
+
+        }
+        .right{
+            float: right;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +78,17 @@
     <div class="container">
 <pre><code>php artisan generate:resource dog --fields="name:string, age:integer"</code></pre>        
 <pre><code>php artisan generate:scaffold tweet --fields="author:string, body:text"</code></pre>        
+    <div class="left">
+        <p>It should take</p>
+        <p>about 10 minutes.</p>
     </div>
+    <div class="right">
+        <a href="myindex">myindex</a>
+        <p>yah</p>
+        baby
+    </div>
+    </div>
+
 
 </body>
 </html>

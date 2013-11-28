@@ -16,7 +16,7 @@ Route::get('bam', function()
 	return View::make('bam');
 });
 
-Route::get('index',function(){
+Route::get('myindex',function(){
 	$pagetitle="Index";
 	return View::make('index')
 	->with(compact('pagetitle'));

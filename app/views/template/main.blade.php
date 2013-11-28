@@ -16,7 +16,9 @@
     <body>
     <style>
     .dev{
-    	background-color: red;
+    	background-color: rgb(0,50,50);
+        color:rgb(200,230,250);
+        padding: 5px;
     }
 
     </style>
@@ -26,9 +28,20 @@ $start=microtime(true);
 ?>
 
 <div class="container">
-    <h1>{{$pagetitle}}</h1>
-    @yield('main')
+    <div class="page-wrapper">
+        
+        <div class="page-header">
+            <h1>{{$pagetitle}}</h1>
+        </div>
+        
+        <div class="main">
+            @yield('main')
+        </div>
+        <div class="secondary">
+            @yield('secondary')            
+        </div>
 
+    </div>
 </div>
 
 <!-- STOP EDITING -->
@@ -38,6 +51,7 @@ $end=microtime(true);
 echo $end-$start."<hr>";
 ?>	
 </div>
+
 
      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     </body>
