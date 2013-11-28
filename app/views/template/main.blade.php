@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="laravel tutorial example">
+        <meta name="description" content="laravel sandbox example">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lar.dev</title>
-		<link rel="stylesheet/less" href="{{asset('/assets/less/pense.less')}}">
+		<link rel="stylesheet/less" href="{{asset('/assets/less/project.less')}}">
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="/assets/js/less-1.5.0.min.js"></script>
 		<script type="text/javascript">
@@ -29,15 +29,17 @@ $start=microtime(true);
 
 <div class="container">
     <div class="page-wrapper">
-        
+        <span class="badge">div.page-wrapper</span>
         <div class="page-header">
             <h1>{{$pagetitle}}</h1>
         </div>
         
         <div class="main">
+            <span class="badge">div.main</span>
             @yield('main')
         </div>
         <div class="secondary">
+            <span class="badge">div.secondary</span>
             @yield('secondary')            
         </div>
 
@@ -46,10 +48,12 @@ $start=microtime(true);
 
 <!-- STOP EDITING -->
 <div class="dev">
+    <span class="badge">div.dev</span>
 <?php
 $end=microtime(true);
 echo $end-$start."<hr>";
 ?>	
+<input type="text"><button class="btn-primary">Search</button>
 </div>
 
 

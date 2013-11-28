@@ -1,8 +1,17 @@
 @extends('template/main')
 @section('main')
-	<h1>Vada Voom <input type="text"></h1>
-	<h2>Bada Bing</h2>
-	<h3>Bada Boom</h3>
+
+<p><code><?= basename(__FILE__) ?></code></p>
+<p>Have a look at <h3><code>app/views/index</code></h3> and <code>app/views/template/main</code></p>
+<!-- ??? -->
+
+<h2>This page requires less.</h2>
+<p>Live edit your display in <code>project.less</code></p>
+<h2>Use Bower to install bootstrap</h2>
+	<h1><input type="text"><button class="btn-primary">Search</button></h1>
+
+	<h2><a href="https://github.com/twitter/recess">https://github.com/twitter/recess</a></h2>
+	<h3>npm install recess -g</h3>
 	<h4>bing</h4>
 	<h5>blah</h5>
 	<h6>bah</h6>

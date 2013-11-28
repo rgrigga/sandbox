@@ -114,7 +114,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Rgrigga\Tattoo\TattooServiceProvider',
+		// 'Rgrigga\Tattoo\TattooServiceProvider',
+		'Vivio\Dev\DevServiceProvider',
 
 	),
 

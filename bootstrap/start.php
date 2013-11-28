@@ -29,6 +29,7 @@ $app->redirectIfTrailingSlash();
 $env = $app->detectEnvironment(array(
 
 	'local' => array('Netbook'),
+	'dev' => array('Grisbuntu'),
 
 ));
 
