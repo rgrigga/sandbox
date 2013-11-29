@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'laptop',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -62,7 +62,16 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-
+		'laptop' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'sandbox',
+			'username'  => 'griswold',
+			'password'  => 'password',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
