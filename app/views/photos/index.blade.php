@@ -21,7 +21,9 @@
 				<tr>
 					<td>{{{ $photo->title }}}</td>
 					<td>{{{ $photo->link }}}</td>
+					
 					<td>{{{ $photo->photo }}}</td>
+					<td><img src="{{{ $photo->photo }}}" alt="{{{ $photo->photo }}}"></td>
                     <td>{{ link_to_route('photos.edit', 'Edit', array($photo->id), array('class' => 'btn btn-info')) }}</td>
                     <td>
                         {{ Form::open(array('method' => 'DELETE', 'route' => array('photos.destroy', $photo->id))) }}

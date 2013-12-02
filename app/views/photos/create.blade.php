@@ -4,7 +4,7 @@
 
 <h1>Create Photo</h1>
 
-{{ Form::open(array('route' => 'photos.store')) }}
+{{ Form::open(array('route' => 'photos.store','files'=>true)) }}
 	<ul>
         <li>
             {{ Form::label('title', 'Title:') }}
@@ -18,7 +18,7 @@
 
         <li>
             {{ Form::label('photo', 'Photo:') }}
-            {{ Form::text('photo') }}
+            {{ Form::file('photo') }}
         </li>
 
 		<li>

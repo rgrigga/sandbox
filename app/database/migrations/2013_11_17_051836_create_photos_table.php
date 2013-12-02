@@ -16,7 +16,7 @@ class CreatePhotosTable extends Migration {
 			$table->increments('id');
 			$table->string('title');
 			$table->string('link');
-			// $table->blob('photo');
+			$table->binary('photo');
 			$table->timestamps();
 		});
 	}
