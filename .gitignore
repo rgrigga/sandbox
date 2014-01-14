@@ -2,8 +2,11 @@
 /bootstrap/compiled.php
 /vendor
 
+<<<<<<< HEAD
 # other repos here, too:
 /workbench
+=======
+>>>>>>> 584823ed6f9342b9fcb2731f01b5aded3d458bbe
 
 # Configuration
 /app/config/local
