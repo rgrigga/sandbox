@@ -26,7 +26,7 @@ $start=microtime(true);
 ?>
 
 <div class="container">
-    <h1>{{$pagetitle}}</h1>
+    <h1>{{$pagetitle or "Page Title"}}</h1>
     @yield('main')
 
 </div>

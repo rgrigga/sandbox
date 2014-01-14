@@ -18,7 +18,7 @@ class TattooServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('rgrigga/tattoo');
+		$this->package('rgrigga/tattoo','tattoo');
 	}
 
 	/**
@@ -28,7 +28,11 @@ class TattooServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		
+        $this->app->bindShared('tattoo', function($app)
+		{
+			return new Tattoo($app);
+		});
 	}
 
 	/**
@@ -38,7 +42,7 @@ class TattooServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('tattoo');
 	}
 
 }

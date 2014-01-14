@@ -2,6 +2,9 @@
 /bootstrap/compiled.php
 /vendor
 
+# other repos here, too:
+/workbench
+
 # Configuration
 /app/config/local
 /app/config/staging
