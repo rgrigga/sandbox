@@ -17,6 +17,7 @@
 | loading of any our classes "manually". Feels great to relax.
 |
 */
+// var_dump(__DIR__.'/../bootstrap/autoload.php');
 
 require __DIR__.'/../bootstrap/autoload.php';
 

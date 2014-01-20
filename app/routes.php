@@ -16,6 +16,12 @@ Route::get('bam', function()
 	return View::make('bam');
 });
 
+Route::get('myindex',function(){
+	$pagetitle="Index";
+	return View::make('index')
+	->with(compact('pagetitle'));
+});
+
 Route::get('notes/{$page}',function($page){
     return View::make('Rgrigga::route($page)');
 });
@@ -26,6 +32,18 @@ Route::get('notes',function(){
     ->with(compact('pagetitle'));
 });
 
+Route::get('angular', function()
+{
+	return View::make('angular');
+});
+
+
+
+Route::resource('fields', 'FieldsController');
+
+Route::resource('comments', 'CommentsController');
+
+Route::resource('photos', 'PhotosController');
 
 Route::get('hello', function()
 {
@@ -34,3 +52,5 @@ Route::get('hello', function()
 Route::get('/',function(){
 	return View::make('home');
 });
+
+Route::resource('scores', 'ScoresController');
