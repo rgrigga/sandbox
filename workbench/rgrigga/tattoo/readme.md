@@ -12,6 +12,11 @@ Note: if you have php5.4, you can use:
 
 <!-- Assume your name is "Bill" and your Package will be named "MyApp" -->
 
+PS: you may need to add the ServiceProvider to this file:
+
+
+    app/config/app.php
+
 **Get Started**.
 Assuming you now have a working local webserver, move to the root directory of your web projects.  You are about to create a folder, but don't do it yet.
 

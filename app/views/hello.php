@@ -92,8 +92,9 @@
         <p>about 10 minutes.</p>
     </div>
     <div class="right">
-        <a href="myindex">myindex</a>
-        <p>yah</p>
+        <ul>
+            <li><a href="myindex">myindex</a></li>
+        </ul>
     </div>
     <div class="text-center"><a href="https://github.com/rgrigga/sandbox">https://github.com/rgrigga/sandbox</a></div>
 

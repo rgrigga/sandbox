@@ -1,0 +1,122 @@
+// /var/www/sandbox/public/bower_components/bootstrap/less
+@import '../../bower_components/bootstrap/less/bootstrap.less';
+@import 'colors.less';
+	.border-radius (@radius: 5px) {
+	  -moz-border-radius: @radius;
+	  -webkit-border-radius: @radius;
+	  border-radius: @radius;
+	}
+	
+	@clouds: rgba(236, 240, 241,1.0);
+	@grey:#555;
+	@mycolor:rgba(149, 165, 185,1.0);
+	@mycolor:@asbestos;
+	
+	@light:lighten(@clouds, 10%);
+	@dark:darken(@mycolor,50%);
+
+	body{
+
+		// background-color: lighten(@pomegranate,20%);
+		background-color: @dark;
+		color:darken(@light,15%);
+	}
+	nav > a:hover{
+		text-decoration: none;
+	}
+	iframe{
+		// display:none;
+	}
+	span.div-badge{
+		display: none;
+		background-color: fadein(@sunflower,50%);
+		color:@dark;
+		border: solid 3px @dark;
+		.border-radius(0);
+	}
+	// iframe #document{
+		// width:300px;
+	// }
+
+		h1,h2,h3{
+			color:black;
+			// font-size: 72px;
+			.box-shadow (@x: 0; @y: 0; @blur: 1px; @color: @dark) {
+			  -moz-box-shadow: @arguments;
+			  -webkit-box-shadow: @arguments;
+			  box-shadow: @arguments;
+			}
+			.box-shadow(-2px; 2px);
+		}
+	.sixes{
+		.make-md-column(2);
+		height:100px;		
+	}
+	.color1{
+		background-color: @pumpkin;
+	}
+	.color2{
+		background-color: @pomegranate;
+	}
+	.color3{
+		background-color: @belize;
+	}
+	.color4{
+		background-color: @sunflower;
+	}
+	.color5{
+		background-color: @greensea;
+	}
+	.color6{
+		background-color: @alizarin;
+	}
+
+	.page-wrapper{
+		.make-row();
+	}
+	
+
+	.page-header{
+		background-color: lighten(@dark, 15%);
+		padding: 20px;
+
+		// background-color:@dark;
+		color:@light;
+		.make-row();
+		// .border-radius(10%);
+		text-align: center;
+	}
+
+	.main{
+		// height: 100%;
+		
+		background-color: lighten(@dark, 15%);
+		color:@light;
+		.make-md-column(9);
+		.make-md-column-push(3);
+
+	}
+	
+	.secondary{
+		background-color: @grey;
+		.make-md-column(3);
+		.make-md-column-pull(9);
+	}
+	
+	.footer{
+		.make-row();
+	}
+	
+	div.dev{
+		background-color: darken(@mycolor, 10%);
+				position: fixed;
+		
+		bottom: 0;
+		right: 0;
+	}
+
+	.dev{
+    	background-color: rgb(0,50,50);
+        color:rgb(200,230,250);
+        padding: 5px;
+    }

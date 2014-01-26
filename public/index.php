@@ -17,7 +17,6 @@
 | loading of any our classes "manually". Feels great to relax.
 |
 */
-// var_dump(__DIR__.'/../bootstrap/autoload.php');
 
 require __DIR__.'/../bootstrap/autoload.php';
 
@@ -43,21 +42,8 @@ $app = require_once __DIR__.'/../bootstrap/start.php';
 | Once we have the application, we can simply call the run method,
 | which will execute the request and send the response back to
 | the client's browser allowing them to enjoy the creative
-| and wonderful applications we have created for them.
+| and wonderful application we have whipped up for them.
 |
 */
 
 $app->run();
-
-/*
-|--------------------------------------------------------------------------
-| Shutdown The Application
-|--------------------------------------------------------------------------
-|
-| Once the app has finished running, we will fire off the shutdown events
-| so that any final work may be done by the application before we shut
-| down the process. This is the last thing to happen to the request.
-|
-*/
-
-$app->shutdown();

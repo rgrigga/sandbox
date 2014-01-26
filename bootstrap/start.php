@@ -12,8 +12,7 @@
 */
 
 $app = new Illuminate\Foundation\Application;
-
-$app->redirectIfTrailingSlash();
+// $app->redirectIfTrailingSlash();
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +28,8 @@ $app->redirectIfTrailingSlash();
 $env = $app->detectEnvironment(array(
 
 	'local' => array('Netbook'),
-	'dev' => array('Grisbuntu'),
+	'ryan' => array('Grisbuntu'),
+	'dev'=>array('host2.viviosoft.com'),
 
 ));
 
